@@ -14,7 +14,7 @@ FamixKindColorStrategyTest >> actualClass [
 
 { #category : #tests }
 FamixKindColorStrategyTest >> testColorFor [
-	self assert: (self actualClass new colorFor: self newMockEntity) equals: CPPSType color
+	self assert: (self actualClass new colorFor: self newMockEntity) equals: FamixTestColorEntity color
 ]
 
 { #category : #tests }

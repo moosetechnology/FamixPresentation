@@ -24,7 +24,7 @@ FamixColorStrategyTest >> actualClass [
 
 { #category : #helpers }
 FamixColorStrategyTest >> newMockEntity [
-	^ MooseEntity new
+	^ FamixTestColorEntity new
 ]
 
 { #category : #tests }

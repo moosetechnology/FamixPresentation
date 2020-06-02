@@ -14,7 +14,7 @@ Internal Representation and Key Implementation Points.
 "
 Class {
 	#name : #FamixNoColorFound,
-	#superclass : #Exception,
+	#superclass : #Error,
 	#instVars : [
 		'entity'
 	],
