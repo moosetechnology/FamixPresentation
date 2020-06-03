@@ -13,11 +13,6 @@ MooseEntity class >> color [
 ]
 
 { #category : #'*Famix-Presentation' }
-MooseEntity >> containsReplicas [
-	^ false
-]
-
-{ #category : #'*Famix-Presentation' }
 MooseEntity class >> englishName [
 	^ self nameTranslations at: #english
 ]
