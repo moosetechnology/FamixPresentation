@@ -16,7 +16,9 @@ FamixStateColorStrategyTest >> actualClass [
 FamixStateColorStrategyTest >> testColorFor [
 	| strat entity |
 	strat := self actualClass new.
-	entity := self newMockEntity.
+	entity := self newMockEntity
+		mooseModel: MooseModel new;
+		yourself.
 	entity stub isDead willReturn: true.
 	self assert: (strat colorFor: entity) equals: (MDLColor tint: #red code: '600')
 ]
