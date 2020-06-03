@@ -12,17 +12,23 @@ BaselineOfFamixPresentation >> baseline: spec [
 		do: [ "Dependencies"
 			self
 				famixTagging: spec;
+				famixReplication: spec;
 				materialColor: spec.
 
 			"Packages"
 			spec
-				package: 'Famix-Presentation' with: [ spec requires: #('MaterialColors' 'FamixTagging') ];
+				package: 'Famix-Presentation' with: [ spec requires: #('MaterialColors' 'FamixTagging' 'FamixReplication') ];
 				package: 'Famix-Presentation-Tests' with: [ spec requires: #('Famix-Presentation') ].
 
 			"Groups"
 			spec
 				group: 'Core' with: #('Famix-Presentation');
 				group: 'Tests' with: #('Famix-Presentation-Tests') ]
+]
+
+{ #category : #dependencies }
+BaselineOfFamixPresentation >> famixReplication: spec [
+	spec baseline: 'FamixReplication' with: [ spec repository: 'github://moosetechnology/FamixReplication:v1.x.x/src' ]
 ]
 
 { #category : #dependencies }
