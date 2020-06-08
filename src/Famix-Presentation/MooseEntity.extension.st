@@ -46,11 +46,6 @@ MooseEntity class >> kindAbbreviation [
 ]
 
 { #category : #'*Famix-Presentation' }
-MooseEntity >> multilanguageDisplayName [
-	^ self class multilanguageDisplayName
-]
-
-{ #category : #'*Famix-Presentation' }
 MooseEntity class >> nameTranslations [
 	^ self subclassResponsibility
 ]
