@@ -1,17 +1,17 @@
-Extension { #name : #FamixTWithEnumValues }
+Extension { #name : #FamixTEnum }
 
 { #category : #'*Famix-Presentation' }
-FamixTWithEnumValues classSide >> color [
+FamixTEnum classSide >> color [
 	^ MDLColor green
 ]
 
 { #category : #'*Famix-Presentation' }
-FamixTWithEnumValues classSide >> kindAbbreviation [
+FamixTEnum classSide >> kindAbbreviation [
 	^ 'E'
 ]
 
 { #category : #'*Famix-Presentation' }
-FamixTWithEnumValues classSide >> nameTranslations [
+FamixTEnum classSide >> nameTranslations [
 	^ Dictionary
 		with: #english -> 'Enum'
 		with: #french -> 'Enum'
