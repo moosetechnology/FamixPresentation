@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'FamixPresentation',
+      #baseline : 'FamixPresentationWithoutFamix',
       #directory : 'src'
     }
   ]
