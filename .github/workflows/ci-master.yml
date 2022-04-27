@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Pharo8
+    name: 'Pharo 10'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
